@@ -1,7 +1,5 @@
 'use strict'
 
-const Color = require('color')
-
 const gruvboxRedColor = '#cc241d'
 const gruvboxGreenColor = '#98971a'
 const gruvboxYellowColor = '#d79921'
@@ -164,8 +162,9 @@ var backgroundColorOptions = {
 }
 
 exports.decorateConfig = config => {
-  var themeStyle = config.gruvboxTheme.style || 'dark'
-  var themeContrast = config.gruvboxTheme.contrast || 'normal'
+  var gruvboxConfig = config.gruvboxTheme || {}
+  var themeStyle = gruvboxConfig.style || 'dark'
+  var themeContrast = gruvboxConfig.contrast || 'normal'
   var terminalForegroundColor = terminalForegrounds[themeStyle]
   var terminalBackgroundColor = terminalBackgrounds[themeStyle][themeContrast]
   var backgroundColors = backgroundColorOptions[themeStyle]

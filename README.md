@@ -1,17 +1,17 @@
-# hyperterm-gruvbox
+# hyper-gruvbox
 
-A [HyperTerm](https://hyperterm.org) theme based on [gruvbox](https://github.com/morhetz/gruvbox).
+A [Hyper](https://hyper.is) theme based on [gruvbox](https://github.com/morhetz/gruvbox).
 
-![screenshot](hyperterm-gruvbox-dark.png)
-![screenshot](hyperterm-gruvbox-light.png)
+![screenshot](hyper-gruvbox-dark.png)
+![screenshot](hyper-gruvbox-light.png)
 
 ## Install
 
-Add `hyperterm-gruvbox` to the plugins list in `~/.hyperterm.js` config file.
+Add `hyper-gruvbox` to the plugins list in `~/.hyper.js` config file.
 
 ## Configuration
 
-One can adjust theme `style` and `contrast` options in `~/.hyperterm.js` config file.
+One can adjust theme `style` and `contrast` options in `~/.hyper.js` config file.
 
 ```
 gruvboxTheme: {
@@ -24,7 +24,8 @@ gruvboxTheme: {
 
 * [gruvbox](https://github.com/morhetz/gruvbox)
 * [hyperterm-gruvbox-dark](https://github.com/mcchrish/hyperterm-gruvbox-dark/)
+* [hyperterm-gruvbox](https://github.com/rezonanc/hyperterm-gruvbox) (which this extends)
 
 ## License
 
-MIT © Edvinas Aleksejonokas
+MIT, refer to included LICENSE file for further details.
