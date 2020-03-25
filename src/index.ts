@@ -65,7 +65,7 @@ export const decorateConfig = config => {
   const lightThemeTerminalBackgroundHardContrast =
     p.gruvboxLightColorHardContrast;
 
-  var terminalColors = {
+  const terminalColors = {
     dark: {
       black: darkThemeTerminalBlack,
       red: darkThemeTerminalRed,
@@ -104,7 +104,7 @@ export const decorateConfig = config => {
     }
   };
 
-  var terminalBackgrounds = {
+  const terminalBackgrounds = {
     dark: {
       soft: darkThemeTerminalBackgroundSoftContrast,
       normal: darkThemeTerminalBackground,
@@ -117,12 +117,12 @@ export const decorateConfig = config => {
     }
   };
 
-  var terminalForegrounds = {
+  const terminalForegrounds = {
     dark: darkThemeTerminalForeground,
     light: lightThemeTerminalForeground
   };
 
-  var backgroundColorOptions = {
+  const backgroundColorOptions = {
     dark: {
       option1: p.gruvboxDarkColorOption1,
       option2: p.gruvboxDarkColorOption2,
@@ -137,11 +137,11 @@ export const decorateConfig = config => {
     }
   };
 
-  var terminalForegroundColor = terminalForegrounds[themeStyle];
-  var terminalBackgroundColor = terminalBackgrounds[themeStyle][themeContrast];
-  var backgroundColors = backgroundColorOptions[themeStyle];
-  var backgroundColorForActiveTab = backgroundColors.option1;
-  var cursorMixBlendMode = themeStyle == "dark" ? "lighten" : "darken";
+  const terminalForegroundColor = terminalForegrounds[themeStyle];
+  const terminalBackgroundColor = terminalBackgrounds[themeStyle][themeContrast];
+  const backgroundColors = backgroundColorOptions[themeStyle];
+  const backgroundColorForActiveTab = backgroundColors.option1;
+  const cursorMixBlendMode = themeStyle == "dark" ? "lighten" : "darken";
 
   return {
     ...rest,
