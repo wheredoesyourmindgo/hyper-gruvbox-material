@@ -143,7 +143,8 @@ export const decorateConfig = config => {
   const backgroundColorForActiveTab = backgroundColors.option1;
   const cursorMixBlendMode = themeStyle == "dark" ? "lighten" : "darken";
 
-  return Object.assign({}, config, {
+  return {
+    ...rest,
     foregroundColor: terminalForegroundColor,
     backgroundColor: terminalBackgroundColor,
     colors: terminalColors[themeStyle],
@@ -168,5 +169,5 @@ export const decorateConfig = config => {
         mix-blend-mode: ${cursorMixBlendMode};
       }
     `
-  })
+  };
 };
