@@ -1,12 +1,12 @@
 {
-  "name": "hyper-gruvbox",
+  "name": "hyper-gruvbox-material",
   "version": "1.1.0",
-  "description": "Hyper theme based on Gruvbox",
+  "description": "Hyper theme based on Gruvbox-Material",
   "license": "MIT",
-  "repository": "joshgentry/hyper-gruvbox",
+  "repository": "wheredoesyourmindgo/hyper-gruvbox-material",
   "author": {
-    "name": "Josh Gentry",
-    "email": "jg.npm@fastmail.com"
+    "name": "Abe Hendricks",
+    "email": "moemanchu@icloud.com"
   },
   "files": [
     "out/index.js"
@@ -18,7 +18,8 @@
     "hyperterm-theme",
     "gruvbox",
     "gruvbox-dark",
-    "gruvbox-light"
+    "gruvbox-light",
+    "material"
   ],
   "scripts": {
     "build:ts": "tsc -p src",
