@@ -16,15 +16,16 @@ One can adjust theme `style` and `contrast` options in `~/.hyper.js` config file
 ```
 gruvboxTheme: {
   style: 'dark', // or 'light'
-  contrast: 'normal' // or 'soft', 'hard'
+  contrast: 'normal' // or 'soft', 'hard',
+  themePalette: 'material' // or 'original, 'mix'
 },
 ```
 
 ## Inspired by
 
-* [gruvbox](https://github.com/morhetz/gruvbox)
-* [hyperterm-gruvbox-dark](https://github.com/mcchrish/hyperterm-gruvbox-dark/)
-* [hyperterm-gruvbox](https://github.com/rezonanc/hyperterm-gruvbox) (which this extends)
+- [gruvbox](https://github.com/morhetz/gruvbox)
+- [hyperterm-gruvbox-dark](https://github.com/mcchrish/hyperterm-gruvbox-dark/)
+- [hyperterm-gruvbox](https://github.com/rezonanc/hyperterm-gruvbox) (which this extends)
 
 ## License
 
