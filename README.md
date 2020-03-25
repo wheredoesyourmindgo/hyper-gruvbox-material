@@ -1,25 +1,29 @@
 # hyper-gruvbox
 
-A [Hyper](https://hyper.is) theme based on [gruvbox](https://github.com/morhetz/gruvbox).
+A [Hyper](https://hyper.is) theme based on [gruvbox-material](https://github.com/sainnhe/gruvbox-material).
 
-![screenshot](hyper-gruvbox-dark.png)
-![screenshot](hyper-gruvbox-light.png)
+<!-- ![screenshot](hyper-gruvbox-dark.png)
+![screenshot](hyper-gruvbox-light.png) -->
 
 ## Install
 
-Add `hyper-gruvbox` to the plugins list in `~/.hyper.js` config file.
+Add `hyper-gruvbox-material` to the plugins list in `~/.hyper.js` config file.
 
 ## Configuration
 
-One can adjust theme `style` and `contrast` options in `~/.hyper.js` config file.
+One can adjust theme `palette`, `style` and `contrast` options in `~/.hyper.js` config file.
 
 ```
 gruvboxTheme: {
   style: 'dark', // or 'light'
-  contrast: 'normal' // or 'soft', 'hard',
-  themePalette: 'material' // or 'original, 'mix'
+  contrast: 'normal', // or 'soft', 'hard',
+  palette: 'material' // or 'original, 'mix'
 },
 ```
+
+## Forked from
+
+- [hyper-gruvbox](https://github.com/joshgentry/hyper-gruvbox)
 
 ## Inspired by
 
