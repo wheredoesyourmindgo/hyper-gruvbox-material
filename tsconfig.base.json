@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "module": "commonjs",
-    "moduleResolution":"node",
+    "module": "es2015",
     "lib": ["dom", "es2015"],
     "sourceMap": false,
     "strict": true, /* enable all strict type-checking options */
