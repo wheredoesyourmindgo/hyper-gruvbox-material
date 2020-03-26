@@ -44,31 +44,14 @@ export const decorateConfig = config => {
   // const gruvboxGreyColor =
   //   themeStyle === 'light' ? p.gruvboxDarkGreyColor : p.gruvboxLightGreyColor;
   /* */
-  const darkThemeTerminalBlack = gruvboxBlackColor;
-  const darkThemeTerminalRed = gruvboxRedColor;
-  const darkThemeTerminalGreen = gruvboxGreenColor;
-  const darkThemeTerminalYellow = gruvboxYellowColor;
-  const darkThemeTerminalBlue = gruvboxBlueColor;
-  const darkThemeTerminalMagenta = gruvboxPurpleColor;
-  const darkThemeTerminalCyan = gruvboxAquaColor;
-  const darkThemeTerminalWhite = gruvboxWhiteColor;
-
-  // const darkThemeTerminalBrightBlack = gruvboxGreyColor;
-  // const darkThemeTerminalBrightRed = p.gruvboxLightRedColor;
-  // const darkThemeTerminalBrightGreen = p.gruvboxLightGreenColor;
-  // const darkThemeTerminalBrightYellow = p.gruvboxLightYellowColor;
-  // const darkThemeTerminalBrightBlue = p.gruvboxLightBlueColor;
-  // const darkThemeTerminalBrightMagenta = p.gruvboxLightPurpleColor;
-  // const darkThemeTerminalBrightCyan = p.gruvboxLightAquaColor;
-  // const darkThemeTerminalBrightWhite = p.gruvboxLightColorOption1;
-  const darkThemeTerminalBrightBlack = gruvboxBlackColor;
-  const darkThemeTerminalBrightRed = gruvboxRedColor;
-  const darkThemeTerminalBrightGreen = gruvboxGreenColor;
-  const darkThemeTerminalBrightYellow = gruvboxYellowColor;
-  const darkThemeTerminalBrightBlue = gruvboxBlueColor;
-  const darkThemeTerminalBrightMagenta = gruvboxPurpleColor;
-  const darkThemeTerminalBrightCyan = gruvboxAquaColor;
-  const darkThemeTerminalBrightWhite = gruvboxWhiteColor;
+  const black = gruvboxBlackColor;
+  const red = gruvboxRedColor;
+  const green = gruvboxGreenColor;
+  const yellow = gruvboxYellowColor;
+  const blue = gruvboxBlueColor;
+  const magenta = gruvboxPurpleColor;
+  const cyan = gruvboxAquaColor;
+  const white = gruvboxWhiteColor;
 
   const darkThemeTerminalForeground = p.gruvboxLightColorOption1;
   const darkThemeTerminalBackgroundSoftContrast =
@@ -77,33 +60,6 @@ export const decorateConfig = config => {
   const darkThemeTerminalBackgroundHardContrast =
     p.gruvboxDarkColorHardContrast;
 
-  const lightThemeTerminalBlack = gruvboxBlackColor;
-  const lightThemeTerminalRed = gruvboxRedColor;
-  const lightThemeTerminalGreen = gruvboxGreenColor;
-  const lightThemeTerminalYellow = gruvboxYellowColor;
-  const lightThemeTerminalBlue = gruvboxBlueColor;
-  const lightThemeTerminalMagenta = gruvboxPurpleColor;
-  const lightThemeTerminalCyan = gruvboxAquaColor;
-  const lightThemeTerminalWhite = gruvboxWhiteColor;
-
-  // const lightThemeTerminalBrightBlack = gruvboxGreyColor;
-  // const lightThemeTerminalBrightRed = .gruvboxDarkRedColor;
-  // const lightThemeTerminalBrightGreen = p.gruvboxDarkGreenColor;
-  // const lightThemeTerminalBrightYellow = p.gruvboxDarkYellowColor;
-  // const lightThemeTerminalBrightBlue = p.gruvboxDarkBlueColor;
-  // const lightThemeTerminalBrightMagenta = p.gruvboxDarkPurpleColor;
-  // const lightThemeTerminalBrightCyan = p.gruvboxDarkAquaColor;
-  // const lightThemeTerminalBrightWhite = p.gruvboxDarkColorOption1;
-
-  const lightThemeTerminalBrightBlack = gruvboxBlackColor;
-  const lightThemeTerminalBrightRed = gruvboxRedColor;
-  const lightThemeTerminalBrightGreen = gruvboxGreenColor;
-  const lightThemeTerminalBrightYellow = gruvboxYellowColor;
-  const lightThemeTerminalBrightBlue = gruvboxBlueColor;
-  const lightThemeTerminalBrightMagenta = gruvboxPurpleColor;
-  const lightThemeTerminalBrightCyan = gruvboxAquaColor;
-  const lightThemeTerminalBrightWhite = gruvboxWhiteColor;
-
   const lightThemeTerminalForeground = p.gruvboxDarkColorOption1;
   const lightThemeTerminalBackgroundSoftContrast =
     p.gruvboxLightColorSoftContrast;
@@ -111,43 +67,23 @@ export const decorateConfig = config => {
   const lightThemeTerminalBackgroundHardContrast =
     p.gruvboxLightColorHardContrast;
 
-  const terminalColors = {
-    dark: {
-      black: darkThemeTerminalBlack,
-      red: darkThemeTerminalRed,
-      green: darkThemeTerminalGreen,
-      yellow: darkThemeTerminalYellow,
-      blue: darkThemeTerminalBlue,
-      magenta: darkThemeTerminalMagenta,
-      cyan: darkThemeTerminalCyan,
-      white: darkThemeTerminalWhite,
-      lightBlack: darkThemeTerminalBrightBlack,
-      lightRed: darkThemeTerminalBrightRed,
-      lightGreen: darkThemeTerminalBrightGreen,
-      lightYellow: darkThemeTerminalBrightYellow,
-      lightBlue: darkThemeTerminalBrightBlue,
-      lightMagenta: darkThemeTerminalBrightMagenta,
-      lightCyan: darkThemeTerminalBrightCyan,
-      lightWhite: darkThemeTerminalBrightWhite
-    },
-    light: {
-      black: lightThemeTerminalBlack,
-      red: lightThemeTerminalRed,
-      green: lightThemeTerminalGreen,
-      yellow: lightThemeTerminalYellow,
-      blue: lightThemeTerminalBlue,
-      magenta: lightThemeTerminalMagenta,
-      cyan: lightThemeTerminalCyan,
-      white: lightThemeTerminalWhite,
-      lightBlack: lightThemeTerminalBrightBlack,
-      lightRed: lightThemeTerminalBrightRed,
-      lightGreen: lightThemeTerminalBrightGreen,
-      lightYellow: lightThemeTerminalBrightYellow,
-      lightBlue: lightThemeTerminalBrightBlue,
-      lightMagenta: lightThemeTerminalBrightMagenta,
-      lightCyan: lightThemeTerminalBrightCyan,
-      lightWhite: lightThemeTerminalBrightWhite
-    }
+  const colors = {
+    black,
+    red,
+    green,
+    yellow,
+    blue,
+    magenta,
+    cyan,
+    white,
+    lightBlack: black,
+    lightRed: red,
+    lightGreen: green,
+    lightYellow: yellow,
+    lightBlue: blue,
+    lightMagenta: magenta,
+    lightCyan: cyan,
+    lightWhite: white
   };
 
   const terminalBackgrounds = {
@@ -193,7 +129,7 @@ export const decorateConfig = config => {
     ...rest,
     foregroundColor,
     backgroundColor,
-    colors: terminalColors[themeStyle],
+    colors,
     cursorColor: gruvboxOrangeColor,
     css: `
       ${config.css ?? ""}
