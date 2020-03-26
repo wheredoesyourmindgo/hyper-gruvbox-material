@@ -8,9 +8,9 @@
     "name": "Abe Hendricks",
     "email": "moemanchu@icloud.com"
   },
-  "main:": "index.js",
+  "main:": "out/index.js",
   "files": [
-    "index.js"
+    "out/**/*"
   ],
   "keywords": [
     "hyper",
