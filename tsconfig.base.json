@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "es2015",
-    "lib": ["dom", "es2015"],
+    "module": "system",
+    "target": "es5",
     "sourceMap": false,
     "strict": true, /* enable all strict type-checking options */
     "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */

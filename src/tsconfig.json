@@ -3,6 +3,12 @@
   "compilerOptions": {
     "strict": false,
     "rootDir": ".",
-    "outDir": "../out"
-  }
+    "outFile": "../index.js"
+  },
+  "files":[
+    "index.ts",
+    "palettes/original.ts",
+    "palettes/material.ts",
+    "palettes/mix.ts"
+  ]
 }
