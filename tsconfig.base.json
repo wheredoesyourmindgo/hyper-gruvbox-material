@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "preserveWatchOutput": true,
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution":"node",
+    "lib": ["dom","es6"],
     "sourceMap": false,
-    "strict": false,
-    "target": "es6"
+    "strict": true, /* enable all strict type-checking options */
+    "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
+    "noUnusedParameters": true,  /* Report errors on unused parameters. */
+    "preserveWatchOutput": true
   }
 }
