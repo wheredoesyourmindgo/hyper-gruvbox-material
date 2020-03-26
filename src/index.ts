@@ -18,27 +18,27 @@ export const decorateConfig = config => {
   /* Temporary */
 
   const gruvboxRedColor =
-    themeStyle === "light" ? p.gruvboxDarkRedColor : p.gruvboxLightRedColor;
+    themeStyle === "dark" ? p.gruvboxDarkRedColor : p.gruvboxLightRedColor;
   const gruvboxOrangeColor =
-    themeStyle === "light"
+    themeStyle === "dark"
       ? p.gruvboxDarkOrangeColor
       : p.gruvboxLightOrangeColor;
   const gruvboxYellowColor =
-    themeStyle === "light"
+    themeStyle === "dark"
       ? p.gruvboxDarkYellowColor
       : p.gruvboxLightYellowColor;
   const gruvboxGreenColor =
-    themeStyle === "light" ? p.gruvboxDarkGreenColor : p.gruvboxLightGreenColor;
+    themeStyle === "dark" ? p.gruvboxDarkGreenColor : p.gruvboxLightGreenColor;
   const gruvboxAquaColor =
-    themeStyle === "light" ? p.gruvboxDarkAquaColor : p.gruvboxLightAquaColor;
+    themeStyle === "dark" ? p.gruvboxDarkAquaColor : p.gruvboxLightAquaColor;
   const gruvboxBlueColor =
-    themeStyle === "light" ? p.gruvboxDarkBlueColor : p.gruvboxLightBlueColor;
+    themeStyle === "dark" ? p.gruvboxDarkBlueColor : p.gruvboxLightBlueColor;
   const gruvboxPurpleColor =
-    themeStyle === "light"
+    themeStyle === "dark"
       ? p.gruvboxDarkPurpleColor
       : p.gruvboxLightPurpleColor;
   const gruvboxGreyColor =
-    themeStyle === "light" ? p.gruvboxDarkGreyColor : p.gruvboxLightGreyColor;
+    themeStyle === "dark" ? p.gruvboxDarkGreyColor : p.gruvboxLightGreyColor;
   /* */
   const darkThemeTerminalBlack = p.gruvboxDarkColor;
   const darkThemeTerminalRed = gruvboxRedColor;
