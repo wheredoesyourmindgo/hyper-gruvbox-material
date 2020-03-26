@@ -26,7 +26,8 @@
     "build:ts": "tsc -p src",
     "watch:ts": "yarn build:ts -w",
     "build": "yarn build:ts",
-    "prepublish": "yarn build && rollup -c",
+    "rollup": "rollup -c",
+    "prepublish": "yarn build && yarn rollup",
     "dev": "yarn watch:ts"
   },
   "dependencies": {},
