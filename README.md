@@ -5,6 +5,8 @@ A [Hyper](https://hyper.is) theme based on [gruvbox-material](https://github.com
 <!-- ![screenshot](hyper-gruvbox-dark.png)
 ![screenshot](hyper-gruvbox-light.png) -->
 
+## Ooops. Sadly I'm not sure why this plugin doesn't work with Hyper. Check back here in the future or solve the riddle
+
 ## Install
 
 Add `hyper-gruvbox-material` to the plugins list in `~/.hyper.js` config file.
