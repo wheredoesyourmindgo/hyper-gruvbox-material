@@ -1,14 +1,14 @@
-export const gruvboxRedColor = "#ea6962";
-export const gruvboxOrangeColor = "#e78a4e";
-export const gruvboxYellowColor = "#d8a657";
-export const gruvboxGreenColor = "#a9b665";
-export const gruvboxAquaColor = "#89b482";
-export const gruvboxBlueColor = "#7daea3";
-export const gruvboxPurpleColor = "#d3869b";
-export const gruvboxGreyColor = "#928374";
+// export const gruvboxRedColor = "#ea6962";
+// export const gruvboxOrangeColor = "#e78a4e";
+// export const gruvboxYellowColor = "#d8a657";
+// export const gruvboxGreenColor = "#a9b665";
+// export const gruvboxAquaColor = "#89b482";
+// export const gruvboxBlueColor = "#7daea3";
+// export const gruvboxPurpleColor = "#d3869b";
+// export const gruvboxGreyColor = "#928374";
 
 export const gruvboxLightRedColor = "#c14a4a";
-// const gruvboxLightOrangeColor = '#c35e0a'
+export const gruvboxLightOrangeColor = "#c35e0a";
 export const gruvboxLightYellowColor = "#b47109";
 export const gruvboxLightGreenColor = "#6c782e";
 export const gruvboxLightAquaColor = "#4c7a5d";
@@ -17,7 +17,7 @@ export const gruvboxLightPurpleColor = "#945e80";
 export const gruvboxLightGreyColor = "#7c6f64";
 
 export const gruvboxDarkRedColor = "#b85651";
-// const gruvboxDarkOrangeColor = '#bd6f3e'
+export const gruvboxDarkOrangeColor = "#bd6f3e";
 export const gruvboxDarkYellowColor = "#c18f41";
 export const gruvboxDarkGreenColor = "#8f9a52";
 export const gruvboxDarkAquaColor = "#72966c";
