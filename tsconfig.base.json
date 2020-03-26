@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "es6",
+    "target": "es2015",
+    "module": "commonjs",
     "moduleResolution":"node",
-    "lib": ["dom","es6"],
+    "lib": ["dom", "es2015"],
     "sourceMap": false,
     "strict": true, /* enable all strict type-checking options */
     "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
