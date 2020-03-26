@@ -4,6 +4,6 @@
     "preserveWatchOutput": true,
     "sourceMap": true,
     "strict": false,
-    "target": "es6"
+    "target": "es5"
   }
 }
