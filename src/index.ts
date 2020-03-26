@@ -137,25 +137,25 @@ export const decorateConfig = config => {
     }
   };
 
-  const terminalForegroundColor = terminalForegrounds[themeStyle];
-  const terminalBackgroundColor = terminalBackgrounds[themeStyle][themeContrast];
+  const foregroundColor = terminalForegrounds[themeStyle];
+  const backgroundColor = terminalBackgrounds[themeStyle][themeContrast];
   const backgroundColors = backgroundColorOptions[themeStyle];
   const backgroundColorForActiveTab = backgroundColors.option1;
   const cursorMixBlendMode = themeStyle == "dark" ? "lighten" : "darken";
 
   return {
     ...rest,
-    foregroundColor: terminalForegroundColor,
-    backgroundColor: terminalBackgroundColor,
+    foregroundColor,
+    backgroundColor,
     colors: terminalColors[themeStyle],
     cursorColor: p.gruvboxOrangeColor,
     css: `
-      ${config.css || ""}
+      ${config.css ?? ""}
       .tabs_list,
       .tab_tab,
       .tabs_borderShim {
-        color: ${terminalForegroundColor} !important;
-        background-color: ${terminalBackgroundColor} !important;
+        color: ${foregroundColor} !important;
+        background-color: ${backgroundColor} !important;
         border-color: transparent !important;
       }
       .tab_active {
@@ -164,7 +164,7 @@ export const decorateConfig = config => {
       }
     `,
     termCSS: `
-      ${config.termCSS || ""}
+      ${config.termCSS ?? ""}
       .cursor-node {
         mix-blend-mode: ${cursorMixBlendMode};
       }
