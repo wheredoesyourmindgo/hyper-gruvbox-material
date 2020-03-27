@@ -8,6 +8,12 @@ export const decorateConfig = config => {
     hypest: hypestConfig = {},
     ...rest
   } = config;
+  const { colors: hypestColors, ...hypestConfigRest } = hypestConfig;
+  const {
+    accentColor: hypestAccentColor,
+    ...hypestConfigForTheme
+  } = hypestConfigRest;
+
   const {
     style: themeStyle = "dark",
     contrast: themeContrast = "normal",
@@ -135,29 +141,33 @@ export const decorateConfig = config => {
     backgroundColor,
     colors,
     cursorColor: gruvboxOrangeColor,
-    css: `
-      ${config.css ?? ""}
-      .tabs_list,
-      .tab_tab,
-      .tabs_borderShim {
-        color: ${foregroundColor} !important;
-        background-color: ${backgroundColor} !important;
-        border-color: transparent !important;
-      }
-      .tab_active {
-        background-color: ${backgroundColorForActiveTab} !important;
-        box-shadow: 2px 0 0 0 ${gruvboxOrangeColor} inset;
-      }
-    `,
-    termCSS: `
-      ${config.termCSS ?? ""}
-      .cursor-node {
-        mix-blend-mode: ${cursorMixBlendMode};
-      }
-    `,
+    // css: `
+    //   ${config.css ?? ""}
+    //   .tabs_list,
+    //   .tab_tab,
+    //   .tabs_borderShim {
+    //     color: ${foregroundColor} !important;
+    //     background-color: ${backgroundColor} !important;
+    //     border-color: transparent !important;
+    //   }
+    //   .tab_active {
+    //     background-color: ${backgroundColorForActiveTab} !important;
+    //     box-shadow: 2px 0 0 0 ${gruvboxOrangeColor} inset;
+    //   }
+    // `,
+    // termCSS: `
+    //   ${config.termCSS ?? ""}
+    //   .cursor-node {
+    //     mix-blend-mode: ${cursorMixBlendMode};
+    //   }
+    // `,
     hypest: {
-      colors,
-      ...hypestConfig
+      colors: {
+        ...colors,
+        ...hypestColors,
+        accentColor: hypestAccentColor
+      },
+      ...hypestConfigForTheme
     }
   };
 };
