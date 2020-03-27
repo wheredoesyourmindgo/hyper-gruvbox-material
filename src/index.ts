@@ -155,10 +155,10 @@ const decorateConfig = config => {
     background = backgroundColor;
   } else if (!isDarkMode && isVibrant) {
     // background = `rgba(255, 255, 255, .7)`;
-    background = `${backgroundColor}B3`; // 70%
+    background = `${backgroundColor}99`; // 60%
   } else if (isDarkMode && isVibrant) {
     // background = `rgba(0, 0, 0, .4)`;
-    background = `${backgroundColor}66`; // 40%
+    background = `${backgroundColor}80`; // 50%
   }
 
   let tabBorder, tabActiveBorder, activeTabEdges;
