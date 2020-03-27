@@ -16,7 +16,7 @@ Add `hyper-gruvbox-material` to the plugins list in `~/.hyper.js` config file.
 
 ## Configuration
 
-One can adjust theme `palette`, `style`, `contrast`, `accentColor`, `vibrancy`, `borders`, and `hideControls` options in `~/.hyper.js` config file.
+One can adjust theme `palette`, `style`, `contrast`, `accentColor`, `vibrancy`, `borders`, and `hideControls` options in `~/.hyper.js` config file. All options are configured with the following default values. Note, the screenshots shown in this README.md likely use _non-default_ settings.
 
 ```
 gruvboxTheme: {
@@ -26,7 +26,9 @@ gruvboxTheme: {
   accentColor: "yellow", //  or 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white'
   vibrancy:, false // or true
   borders: false, // or true
-  hideControls: false // or true
+  hideControls: false, // or true
+  tabHeight: 32 // number expressed as pixels
+  backgroundOpacity: 0.6 // number from 0 - 1; 1 being opaque
 },
 ```
 

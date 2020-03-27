@@ -14,7 +14,9 @@ const decorateConfig = config => {
     vibrancy: isVibrant = false,
     accentColor = "yellow",
     borders = false,
-    hideControls = false
+    hideControls = false,
+    tabHeight: themeTabHeight = 32,
+    backgroundOpacity = 0.6
   } = gruvboxConfig;
 
   const { ...p } =
@@ -151,14 +153,8 @@ const decorateConfig = config => {
   }
 
   let background = backgroundColor;
-  if (!isDarkMode && !isVibrant) {
-    background = backgroundColor;
-  } else if (!isDarkMode && isVibrant) {
-    // background = `rgba(255, 255, 255, .7)`;
-    background = `${backgroundColor}99`; // 60%
-  } else if (isDarkMode && isVibrant) {
-    // background = `rgba(0, 0, 0, .4)`;
-    background = `${backgroundColor}99`; // 60%
+  if (isVibrant) {
+    background = `${backgroundColor}${hexOpacity(backgroundOpacity)}`;
   }
 
   let tabBorder, tabActiveBorder, activeTabEdges;
@@ -236,11 +232,7 @@ const decorateConfig = config => {
   const shadowColorRing = colors[accentColor] + "28";
   const shadowColorBorder = colors[accentColor] + "CC";
 
-  const tabHeight = "37px";
-
-  const backgroundColors = backgroundColorOptions[themeStyle];
-  const backgroundColorForActiveTab = backgroundColors.option1;
-  const cursorMixBlendMode = themeStyle == "dark" ? "lighten" : "darken";
+  const tabHeight = `${themeTabHeight}px`;
 
   return {
     ...rest,
@@ -665,5 +657,15 @@ const decorateConfig = config => {
   `
   };
 };
+
+function hexOpacity(val: number) {
+  const rounded = Math.round(val * 100) / 100;
+  const alpha = Math.round(rounded * 255);
+  const hex = (alpha + 0x10000)
+    .toString(16)
+    .substr(-2)
+    .toUpperCase();
+  return hex;
+}
 
 export { onWindow, decorateConfig, decorateBrowserOptions };
