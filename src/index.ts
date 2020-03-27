@@ -383,7 +383,7 @@ const decorateConfig = config => {
       height: ${tabHeight};
     }
     .tab_icon {
-      color: ${isDarkMode ? "#FFF" : "#222"};
+      color: ${foregroundColor};
       width: 17px !important;
       height: 17px !important;
       top: 10px;
@@ -557,7 +557,7 @@ const decorateConfig = config => {
       border-radius: 5px;
       box-shadow: 0 0 0 3px ${shadowColor}, 0 1px 3px rgba(0, 0, 0, .1), 0 0 1px rgba(0, 0, 0, .1), 0 0 0 1px ${shadowColor};
       padding: 2px 6px 2px 26px !important;
-      color: ${isDarkMode ? "#fff" : "#222"} !important;
+      color: ${foregroundColor} !important;
       opacity: 1 !important;
       margin-right: 8px;
       flex-grow: 1;
@@ -589,7 +589,7 @@ const decorateConfig = config => {
     // Override: hyper-tab-icons
 
     .tabs_title svg, .tab_tab svg {
-      fill: ${isDarkMode ? "#fff" : "#222"} !important;
+      fill: ${foregroundColor} !important;
       opacity: ${isDarkMode ? ".3" : ".6"};
       shape-rendering: crispEdges;
     }
@@ -614,7 +614,7 @@ const decorateConfig = config => {
     .tab_tab.tab_active .tab_process:before,
     .tab_tab:hover .tab_process:before {
       opacity: .8;
-      background-color: ${isDarkMode ? "#fff" : "#222"} !important;
+      background-color: ${foregroundColor} !important;
     }
     .tab_tab.tab_hasActivity .tab_process:before,
     .tab_tab.tab_hasActivity .tab_icon:before,
@@ -649,10 +649,10 @@ const decorateConfig = config => {
       };
     }
     .footer_group {
-      color: ${isDarkMode ? "#fff" : "#222"} !important;
+      color: ${foregroundColor} !important;
     }
     .footer_footer .item_icon::before {
-      background: ${isDarkMode ? "#fff" : "#222"} !important;
+      background: ${foregroundColor} !important;
       opacity: .8;
     }
     .footer_footer .item_dirty::before,
