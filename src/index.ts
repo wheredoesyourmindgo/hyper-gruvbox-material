@@ -246,8 +246,9 @@ const decorateConfig = config => {
     ...rest,
     backgroundColor: background,
     foregroundColor,
+    cursorColor: cursorColor,
+    selectionColor: selectionColor,
     colors,
-    cursorColor: gruvboxOrangeColor,
     css: `${config.css || ""}
     .hyper_main {
       background: ${background};
