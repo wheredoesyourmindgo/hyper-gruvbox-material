@@ -12,8 +12,8 @@ const decorateConfig = config => {
     contrast: themeContrast = "normal",
     palette: themePalette = "material",
     vibrancy: isVibrant = false,
-    borders = false,
     accentColor = "yellow",
+    borders = false,
     hideControls = false
   } = gruvboxConfig;
 
@@ -158,7 +158,7 @@ const decorateConfig = config => {
     background = `${backgroundColor}99`; // 60%
   } else if (isDarkMode && isVibrant) {
     // background = `rgba(0, 0, 0, .4)`;
-    background = `${backgroundColor}80`; // 50%
+    background = `${backgroundColor}99`; // 60%
   }
 
   let tabBorder, tabActiveBorder, activeTabEdges;
