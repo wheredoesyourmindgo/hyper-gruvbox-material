@@ -35,12 +35,6 @@ gruvboxTheme: {
 - [hyper-gruvbox](https://github.com/joshgentry/hyper-gruvbox)
 - [hyper-hypest](https://github.com/dizzyup/hyper-hypest)
 
-## Inspired by
-
-- [gruvbox](https://github.com/morhetz/gruvbox)
-- [hyperterm-gruvbox-dark](https://github.com/mcchrish/hyperterm-gruvbox-dark/)
-- [hyperterm-gruvbox](https://github.com/rezonanc/hyperterm-gruvbox) (which this extends)
-
 ## License
 
 MIT, refer to included LICENSE file for further details.
