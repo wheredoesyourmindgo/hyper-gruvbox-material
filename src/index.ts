@@ -350,20 +350,18 @@ const decorateConfig = config => {
     }
     .tab_text {
       font-weight: 500;
-      color: ${isDarkMode ? "rgba(255, 255, 255, .4)" : "rgba(0, 0, 0, .4)"};
+      color: ${foregroundColor + "66"};
       height: calc(${tabHeight} - ${borders === true ? "1px" : "0px"});
       transition: color ease .1s, background ease .1s;
     }
     .tab_tab:hover .tab_text {
-      color: ${isDarkMode ? "rgba(255, 255, 255, .8)" : "rgba(0, 0, 0, .6)"};
+      color: ${isDarkMode ? foregroundColor + "CC" : foregroundColor + "99"};
       background: ${
         isDarkMode ? "rgba(255, 255, 255, .02)" : "rgba(255, 255, 255, .2)"
       };
     }
     .tab_textActive, .tabs_title {
-      color: ${
-        isDarkMode ? "rgba(255, 255, 255, .8)" : "rgba(0, 0, 0, .8)"
-      } !important;
+      color: ${foregroundColor}CC !important;
       background: ${
         isDarkMode ? "rgba(0, 0, 0, 0)" : "rgba(255, 255, 255, .4)"
       } !important;
