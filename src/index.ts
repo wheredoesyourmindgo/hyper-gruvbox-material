@@ -664,7 +664,7 @@ const decorateConfig = config => {
       color: ${cursorColor} !important;
     }
   `
-  });
+  };
 };
 
 export { onWindow, decorateConfig, decorateBrowserOptions };
