@@ -135,10 +135,9 @@ export const decorateConfig = config => {
   const backgroundColorForActiveTab = backgroundColors.option1;
   const cursorMixBlendMode = themeStyle == "dark" ? "lighten" : "darken";
 
-  return {
+  const newConfig = {
     ...rest,
     foregroundColor,
-    backgroundColor,
     colors,
     cursorColor: gruvboxOrangeColor,
     // css: `
@@ -162,12 +161,20 @@ export const decorateConfig = config => {
     //   }
     // `,
     hypest: {
+      accentColor: hypestAccentColor,
       colors: {
         ...colors,
-        ...hypestColors,
-        accentColor: hypestAccentColor
+        ...hypestColors
       },
       ...hypestConfigForTheme
     }
+  };
+
+  if (Object.keys(hypestConfig).length > 0) {
+    return newConfig;
+  }
+  return {
+    backgroundColor,
+    ...newConfig
   };
 };
