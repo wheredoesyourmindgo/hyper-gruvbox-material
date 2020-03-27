@@ -15,7 +15,7 @@ const decorateConfig = config => {
     accentColor = "yellow",
     borders = false,
     hideControls = false,
-    tabHeight: themeTabHeight = 32,
+    tabHeight: themeTabHeight = 37,
     backgroundOpacity = 0.6
   } = gruvboxConfig;
 
