@@ -3,7 +3,11 @@ import * as mixPalette from "./palettes/mix";
 import * as matPalette from "./palettes/material";
 
 export const decorateConfig = config => {
-  const { gruvboxTheme: gruvboxConfig = {}, ...rest } = config;
+  const {
+    gruvboxTheme: gruvboxConfig = {},
+    hypest: hypestConfig = {},
+    ...rest
+  } = config;
   const {
     style: themeStyle = "dark",
     contrast: themeContrast = "normal",
@@ -150,6 +154,10 @@ export const decorateConfig = config => {
       .cursor-node {
         mix-blend-mode: ${cursorMixBlendMode};
       }
-    `
+    `,
+    hypest: {
+      colors,
+      ...hypestConfig
+    }
   };
 };
