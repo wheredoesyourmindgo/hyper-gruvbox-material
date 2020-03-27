@@ -3,6 +3,7 @@
 A [Hyper](https://hyper.is) theme based on [gruvbox-material](https://github.com/sainnhe/gruvbox-material) and [hyper-hypest](https://github.com/dizzyup/hyper-hypest).
 
 ![Dark Style - medium contrast](<https://github.com/wheredoesyourmindgo/hyper-gruvbox-material/raw/master/images/dark-screenshot.png>
+
 ![Light Style - medium contrast](<https://github.com/wheredoesyourmindgo/hyper-gruvbox-material/raw/master/images/light-screenshot.png>
 
 ## Install
