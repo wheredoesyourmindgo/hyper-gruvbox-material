@@ -242,7 +242,7 @@ const decorateConfig = config => {
   const backgroundColorForActiveTab = backgroundColors.option1;
   const cursorMixBlendMode = themeStyle == "dark" ? "lighten" : "darken";
 
-  const newConfig = {
+  return {
     ...rest,
     backgroundColor: background,
     foregroundColor,
@@ -664,9 +664,7 @@ const decorateConfig = config => {
       color: ${cursorColor} !important;
     }
   `
-  };
-
-  newConfig;
+  });
 };
 
 export { onWindow, decorateConfig, decorateBrowserOptions };
